@@ -69,10 +69,6 @@ export class AppComponent {
         }
     }
 
-    checkForTie(){
-        return this.allBlockHaveOwner();
-    }
-
     allBlockHaveOwner(){
         return this.rows.filter(r => r.blocks[0].owner && r.blocks[1].owner && r.blocks[2].owner).length === 3;
     }
