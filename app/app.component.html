@@ -1,0 +1,6 @@
+<div class="capitalize">{{next}}'s turn</div>
+<div *ngFor="let row of rows">
+    <span (click)="select(block)" [ngClass]="block.owner" class="block" *ngFor="let block of row.blocks"></span>
+</div>
+<div class="capitalize">red's victories: {{redWins}}</div>
+<div class="capitalize">blue's victories: {{blueWins}}</div>
